@@ -4,7 +4,7 @@ import FormData from 'form-data';
 import fs from 'fs';
 //import AppError from '../errors/AppError';
 
-const sessionToken = 'j25gpkkkt22tod7ar7sdv8oa85';
+const sessionToken = process.env.GLPI_SESSION_TOKEN;
 const appToken = process.env.GLPI_APP_TOKEN;
 
 const axiosInstance = axios.create({
